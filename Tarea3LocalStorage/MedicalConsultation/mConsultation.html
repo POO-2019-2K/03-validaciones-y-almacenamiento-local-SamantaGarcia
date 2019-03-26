@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medical Consultation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles.css">
+</head>
+<body>
+        <nav>
+                <div class="nav-wrapper">
+                  <a href="" class="brand-logo">Tarea 3</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../Employees/Employee.html">Employees Schedule</a></li>
+                    <li><a href="mConsultation.html">Medical Consultation</a></li>
+                    <li><a href="../tExpenses/tExpenses.html">Travel expenses</a></li>
+                  </ul>
+                </div>
+              </nav>
+    <div class="container-fluid">
+            
+                    <form action="" id="form">
+                            <div class="form-group">
+                                    <label for="name">Patiente name</label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="name"
+                                      placeholder="Samanta Rubio"
+                                      required
+                                    />
+                            <div class="valid-feedback">Correct!</div>
+                            <div class="invalid-feedback">This camp is requiered</div> 
+                            <div class="form-group">
+                                    <label for="name">Date</label>
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      id="date"
+                                      required
+                                    />
+                            <div class="valid-feedback">Correct!</div>
+                            <div class="invalid-feedback">This camp is requiered</div>
+                            <div class="form-group">
+                                    <label for="name">Hour</label>
+                                    <input
+                                      type="time"
+                                      class="form-control"
+                                      id="hour"
+                                      required
+                                    />
+                            <div class="valid-feedback">Correct!</div>
+                            <div class="invalid-feedback">This camp is requiered</div> <br>
+                           <center><a id="btn2" class="btn-floating waves-effect waves-light red"><i class="material-icons">add</i></a></center>
+                    </form>
+                    <br><br>
+           <div class="row">
+               <div class="col-6">
+                   
+                   <table class="table border" id="list">
+                        <thead>
+                                Medical consultation list
+                            </thead>
+                       <tbody>
+                           <tr>
+                               <td>Date</td>
+                               <td>Hora</td>
+                               <td>Patient Name</td>
+                               <td>Days remaining for the date</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="col-6">
+                   <table class="table border" id="info">
+                       <thead>
+                           Info
+                       </thead>
+                        <tbody>
+                            <tr>
+                                <td>Indicator</td>
+                                <td>Value</td>
+                            </tr>
+                            <tr>
+                                <td>Appointments cheduled on monday</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Appointments cheduled on tuesday</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Appointments cheduled on wednesday</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Appointments cheduled on thursday</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Appointments cheduled on friday</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                   </table>
+               </div>
+           </div>
+            
+    </div>
+</body>
+<script src="./Main.js" type="module"></script>
+</html>

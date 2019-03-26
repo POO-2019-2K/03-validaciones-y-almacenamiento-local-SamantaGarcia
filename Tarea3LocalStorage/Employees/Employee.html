@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medical Consultation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles.css">
+</head>
+<body>
+        <nav>
+                <div class="nav-wrapper">
+                  <a href="" class="brand-logo">Tarea 3</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="Employee.html">Employees Schedule</a></li>
+                    <li><a href="../MedicalConsultation/mConsultation.html">Medical Consultation</a></li>
+                    <li><a href="../tExpenses/tExpenses.html">Travel expenses</a></li>
+                  </ul>
+                </div>
+              </nav>
+    <div class="container-fluid">
+            
+                    <form id="form" novalidate>
+                                        <div class="form-group">
+                                                <label for="name">Num of employees</label>
+                                                <input
+                                                  type="text"
+                                                  class="form-control"
+                                                  id="nEmployee"
+                                                  placeholder="0000"
+                                                  required
+                                                />
+                                                <div class="valid-feedback">Correct!</div>
+                                                <div class="invalid-feedback">This camp is requiered</div> 
+            
+                                        <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="name"
+                                                    placeholder="Samanta RG"
+                                                    required
+                                                />
+                                        <div class="valid-feedback">Correct!</div>
+                                        <div class="invalid-feedback">This camp is requiered</div>    
+                                        <div class="form-group">
+                                                <label for="name">Birth Date</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control"
+                                                    id="dBirth"
+                                                    required
+                                                />
+                                        <div class="valid-feedback">Correct!</div>
+                                        <div class="invalid-feedback">This camp is requiered</div>    
+                                        <div class="form-group">
+                                                <label for="name">Date of hire</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control"
+                                                    id="dHire"
+                                                    required
+                                                />
+                                        <div class="valid-feedback">Correct!</div>
+                                        <div class="invalid-feedback">This camp is requiered</div>
+                                        <div class="form-group">
+                                                <label for="name">Salary</label>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    id="salary"
+                                                    placeholder="$$"
+                                                    required
+                                                />
+                                                <div class="valid-feedback">Correct!</div>
+                                                <div class="invalid-feedback">This camp is requiered</div>   
+                                                <br>
+                                                <a id="btn1" class="btn-floating waves-effect waves-light red"><i class="material-icons">add</i></a>            
+                                  </form>
+                    <br><br>
+           <div class="row">
+               <div class="col-6">
+                   
+                   <table class="table border" id="list">
+                       <thead>
+                           Employees list
+                        </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Num of employee</td>
+                                    <td>Complete name</td>
+                                    <td>Date of birth</td>
+                                    <td>Date of hire</td>
+                                    <td>Salary</td>
+                                    <td>Age</td>
+                                    <td>Antiquity</td>
+
+                                </tr>
+                            </tbody>
+                        </table> 
+               </div>
+               <div class="col-6">
+                   <table class="table border" id="info">
+                                    <thead>
+                                        Information Table
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Employees with a salary <br> up to $10,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                                <td>Employees with a salary <br> greater than $10,000 <br> and less than $20,000</td>
+                                                <td></td>
+                                            </tr>
+                                        <tr>
+                                                <td>Employees with a salary <br> greater than $20,000</td>
+                                                <td></td>
+                                            </tr>
+                                        <tr>
+                                                <td>Average salary</td>
+                                                <td></td>
+                                            </tr>
+                                        <tr>
+                                                <td>Average age</td>
+                                                <td></td>
+                                            </tr>
+                                    </tbody>
+                            </table>
+               </div>
+           </div>
+            
+    </div>
+</body>
+<script src="./main.js" type="module"></script>
+</html>
